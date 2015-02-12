@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- jsp 预编译 -->
+	<jsp-descriptor>
+		<precompile>true</precompile>
+		<precompile-continue>true</precompile-continue>
+	</jsp-descriptor>
+	<!-- 以下内容说明，优先使用WEB-INF/lib下的类库，在此程序中不使用
+	<container-descriptor>
+		<prefer-web-inf-classes>true</prefer-web-inf-classes>
+	</container-descriptor> -->
+	
+	<context-root>/app</context-root>
+
+</weblogic-web-app>
+

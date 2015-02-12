@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- name 就是服务的名称 -->
+<service name="HelloWorld">
+
+	<description>spring-axis2 webservice</description>
+	<parameter name="ServiceObjectSupplier">
+		org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+	</parameter>
+	<!-- SpringBeanName 是不能改变的 hellWorld 对应springbean中实现类的id -->
+	<parameter name="SpringBeanName">helloWorld</parameter>
+	<!-- 方法名 -->
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only"
+			class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+			class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+	</messageReceivers>
+
+</service>
+<!-- 访问方式:localhost:9090/services/spring-axis2-HelloWorld?wsdl -->
