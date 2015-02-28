@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/**固定导航需设置padding-top*/
+body {
+    padding-top: 70px;
+    /*background-image: url(http://static.ghostchina.com/image/8/cf/8f456ccc38721f2c4318a5f7049f8.jpg);*/
+}
+
+
+/**底部样式*/
+.footerwrapper{
+    background: #f8f8f8;
+    padding: 20px 0;
+    margin-top: 50px;
+    color: #777;
+}

@@ -18,6 +18,9 @@
 
 	<!-- 包扫描由各个模块自己控制 -->
 	
+	
+	<mvc:resources location="/lib/" mapping="/lib/**"/>
+	
 	<!-- 定义返回视图 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"></bean>
 	
