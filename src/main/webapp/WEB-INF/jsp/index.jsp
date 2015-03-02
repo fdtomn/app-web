@@ -40,7 +40,7 @@
                     <li><a href="#">网站模板</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            编程语言<b class="caret"></b>
+                            	编程语言<b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">C</a></li>
@@ -58,7 +58,7 @@
                     <li><a href="#">开发工具</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            其它<b class="caret"></b>
+                            	其它<b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">C</a></li>
@@ -77,13 +77,23 @@
                     <li><a href="#">留言板</a></li>
                     <li><a href="#">联系我</a></li>
                     <li><a href="#">关于我</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown ">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            更多...<b class="caret"></b>
+                            	更多...<b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="http://www.baidu.com">baidu</a></li>
                             <li><a href="http://guge.io">Google</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" style="padding-left:200px;">
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            	用户信息<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" style="margin-left:200px;"> 
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="${pageContext.request.contextPath }/account/logout">注销</a></li>
+                            <li><a href="javascript:void(0)">${user.username }</a></li>
                         </ul>
                     </li>
                 </ul>

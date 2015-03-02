@@ -6,6 +6,35 @@ body {
     /*background-image: url(http://static.ghostchina.com/image/8/cf/8f456ccc38721f2c4318a5f7049f8.jpg);*/
 }
 
+.body-bg-gray{
+	background-color: #eee;
+}
+
+.body-bg-gray h1{
+    color: rgb(74, 164, 180);
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.common-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
 /**底部样式*/
 .footerwrapper{

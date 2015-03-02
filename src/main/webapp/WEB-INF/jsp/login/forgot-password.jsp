@@ -4,19 +4,23 @@
 <head lang="zh-CN">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录</title>
+    <title>忘记密码</title>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/lib/bootstrap/css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/lib/bootstrap/css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/lib/css/style.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/lib/login/css/login.css">
     <script type="text/javascript" charset="UTF-8" src="${pageContext.request.contextPath }/lib/jquery/jquery.min.js"></script>
     <script type="text/javascript" charset="UTF-8" src="${pageContext.request.contextPath }/lib/bootstrap/js/bootstrap.js"></script>
     <style type="text/css">
 
-
+ 		.forgot-password-form {
+            background-color: #fff;
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 30px
+        }
     </style>
 </head>
-<body class="login-bg-gray">
+<body class="body-bg-gray">
 
 <header>
     <nav class="nav navbar-default navbar-fixed-top" role="navigation">
@@ -54,59 +58,29 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15 text-center">Login Form One</h1>
+            <h1 class="margin-bottom-15 text-center">重置密码</h1>
 
-            <form class="form-horizontal common-container login-form margin-bottom-30" 
-            		role="form" action="${pageContext.request.contextPath }/account/login" method="post">
-                <div class="form-group">
-                    <div class="col-xs-12">
-                        <div class="control-wrapper">
-                            <label for="username" class="control-label fa-label"><i class="fa fa-user"></i></label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="control-wrapper">
-                            <label for="password" class="control-label fa-label"><i class="fa fa-lock"></i></label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="checkbox control-wrapper">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="control-wrapper">
-                            <input type="submit" value="Log in" class="btn btn-info">
-                            <a href="${pageContext.request.contextPath }/account/forgotPassword" class="text-right pull-right">Forgot password?</a>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="form-group">
-                    <div class="col-md-12">
-
-                        <label>Login with: </label>
-
-                        <div class="inline-block">
-                            <a href="#"><i class="fa fa-facebook-square login-with"></i></a>
-                            <a href="#"><i class="fa fa-twitter-square login-with"></i></a>
-                            <a href="#"><i class="fa fa-google-plus-square login-with"></i></a>
-                            <a href="#"><i class="fa fa-tumblr-square login-with"></i></a>
-                            <a href="#"><i class="fa fa-github-square login-with"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </form>
+             <form class="form-horizontal forgot-password-form common-container" 
+             	role="form" action="#" method="post">
+	            <div class="form-group">
+	                <div class="col-md-12">
+	                    	请输入您注册我们网站的电子邮件地址.
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-md-12">
+	                    <input type="text" class="form-control" id="email" placeholder="Your Email">
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-md-12">
+	                    <input type="submit" value="提交" class="btn btn-danger">
+	                    <br><br>
+	                    <a href="${pageContext.request.contextPath }/account/login">登录</a> |
+	                    <a href="#">注册</a>
+	                </div>
+	            </div>
+	        </form>
             <!--<div class="text-center">-->
             <!--<a href="create-account.html" class="templatemo-create-new">Create new account <i class="fa fa-arrow-circle-o-right"></i></a>-->
             <!--</div>-->
